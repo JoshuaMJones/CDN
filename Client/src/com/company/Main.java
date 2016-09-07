@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         Client thisClient = new Client(8080);
+        thisClient.getFile("txt1.txt", 2000);
 
     }
 }
