@@ -37,15 +37,20 @@ public class Server {
                 BufferedReader br = new BufferedReader(inSR);
                 String request = br.readLine();
                 System.out.println("Received the request, string is: " + request);
+                String basePath = new File("").getAbsolutePath();
+                basePath += fileLocation;
                 if(request.equals("getallfiles")){
                     //return what files we have.
-                    File directory = new File(fileLocation);
+                    System.out.println("We are going to send a list of files");
+                    File directory = new File(basePath);
                     File[] filesInDir = directory.listFiles();
+                    System.out.println(filesInDir[0].toString());
                     String files = "";
                     for(File curFile : filesInDir){
                         files += curFile.getName() + "\n";
                         files += curFile.length() + "\n";
                     }
+                    System.out.println("Sending this string: \n" + files);
                     outS = clientSocket.getOutputStream();
                     outSW = new OutputStreamWriter(outS);
                     BufferedWriter bufW = new BufferedWriter(outSW);
@@ -53,8 +58,7 @@ public class Server {
                     bufW.flush();
                 }else{
                     //return a particular file that we have.
-                    String basePath = new File("").getAbsolutePath();
-                    basePath += fileLocation;
+
                     //File thisFile = new File(fileLocation + request);
                     File thisFile = new File(basePath + request);
                     byte[] fileByteArray = new byte[(int)thisFile.length()];
