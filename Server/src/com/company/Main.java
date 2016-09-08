@@ -8,7 +8,6 @@ public class Main {
 	// write your code here
         Server thisServer = new Server(port);
         thisServer.listen();
-        ServerGUI thisGUI = new ServerGUI();
 
     }
 }

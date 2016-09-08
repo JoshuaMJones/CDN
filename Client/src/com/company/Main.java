@@ -10,7 +10,7 @@ public class Main {
 	// write your code here
         Client thisClient = new Client(8080);
 
-        ClientGUI thisGUI = new ClientGUI();
+        ClientGUI thisGUI = new ClientGUI(thisClient);
         /*ArrayList<String> files = thisClient.getFileNames();
         for(String cur :files){
             System.out.println(cur);
