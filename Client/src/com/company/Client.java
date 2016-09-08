@@ -75,22 +75,30 @@ public class Client {
             FileOutputStream fileOS = new FileOutputStream(fileLocation);
             BufferedOutputStream bufOS = new BufferedOutputStream((fileOS));
 
-            int bytesRead = inS.read(fileByteArray,0,fileByteArray.length);
-            int current = bytesRead;
+            //int bytesRead = inS.read(fileByteArray,0,fileByteArray.length);
+            //int current = bytesRead;
             System.out.println("about to enter while");
-            for(int i =0; i <fileByteArray.length; i++){
+            /*for(int i =0; i <fileByteArray.length; i++){
                 System.out.println(fileByteArray[i]);
+            }*/
+            int count;
+            while((count = inS.read(fileByteArray)) > 0){
+                System.out.println(count);
+                bufOS.write(fileByteArray,0,count);
+                System.out.println("wrote something?");
             }
-            do{
+
+
+            /*do{
                 System.out.println("Inside the do");
                 bytesRead = inS.read(fileByteArray, current, (fileByteArray.length-current));
                 System.out.println(bytesRead);
                 if(bytesRead >= 0){
                     current += bytesRead;
                 }
-            }while(bytesRead > -1);
+            }while(bytesRead > -1);*/
             System.out.println("About to write to file");
-            bufOS.write(fileByteArray,0,current);
+            //bufOS.write(fileByteArray,0,current);
             bufOS.flush();
 
             System.out.println("Received file from server: " + fileName);
