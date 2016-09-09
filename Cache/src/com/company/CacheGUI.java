@@ -15,6 +15,7 @@ public class CacheGUI {
     private JButton deleteSelectedCacheFileButton;
     private JButton deleteAllCacheFilesButton;
     private JTextPane cacheLog;
+    private JButton logRefreshButton;
     private Cache thisCache;
     private DefaultListModel<String> listModel;
 
@@ -33,13 +34,19 @@ public class CacheGUI {
         deleteSelectedCacheFileButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                //Delete whichever file is currently selected
             }
         });
         deleteAllCacheFilesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                //delete all cached files
+            }
+        });
+        logRefreshButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //Make sure that all the logs are written into the box
             }
         });
     }

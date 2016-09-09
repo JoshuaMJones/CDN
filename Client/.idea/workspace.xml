@@ -2,25 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="185c334f-d9db-476f-a481-bab3fdc73ed5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Cache/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Cache/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Cache/src/com/company/CacheGUI.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Cache/src/com/company/CacheGUI.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Files/txt1.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Client/com/company/Client.class" afterPath="$PROJECT_DIR$/out/production/Client/com/company/Client.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Client/com/company/ClientGUI$1.class" afterPath="$PROJECT_DIR$/out/production/Client/com/company/ClientGUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Client/com/company/ClientGUI.class" afterPath="$PROJECT_DIR$/out/production/Client/com/company/ClientGUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Client/com/company/Main.class" afterPath="$PROJECT_DIR$/out/production/Client/com/company/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/out/production/Server/com/company/Main.class" afterPath="$PROJECT_DIR$/../Server/out/production/Server/com/company/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/out/production/Server/com/company/ServerGUI.class" afterPath="$PROJECT_DIR$/../Server/out/production/Server/com/company/ServerGUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/Cache.class" afterPath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/Cache.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/CacheGUI$1.class" afterPath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/CacheGUI$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/CacheGUI$2.class" afterPath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/CacheGUI$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/CacheGUI.class" afterPath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/CacheGUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/Main.class" afterPath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Cache/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/src/com/company/Cache.java" afterPath="$PROJECT_DIR$/../Cache/src/com/company/Cache.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/src/com/company/CacheGUI.form" afterPath="$PROJECT_DIR$/../Cache/src/com/company/CacheGUI.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/src/com/company/CacheGUI.java" afterPath="$PROJECT_DIR$/../Cache/src/com/company/CacheGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/src/com/company/Main.java" afterPath="$PROJECT_DIR$/../Cache/src/com/company/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Client.java" afterPath="$PROJECT_DIR$/src/com/company/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/ClientGUI.form" afterPath="$PROJECT_DIR$/src/com/company/ClientGUI.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/ClientGUI.java" afterPath="$PROJECT_DIR$/src/com/company/ClientGUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/Files/txt1.txt" afterPath="$PROJECT_DIR$/../Server/Files/txt1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/src/com/company/ServerGUI.java" afterPath="$PROJECT_DIR$/../Server/src/com/company/ServerGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/src/com/company/Main.java" afterPath="$PROJECT_DIR$/../Server/src/com/company/Main.java" />
     </list>
     <ignored path="CDN.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,7 +49,7 @@
       <file leaf-file-name="ClientGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/ClientGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="-51">
               <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -75,8 +70,8 @@
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,9 +101,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Client.java" />
         <option value="$PROJECT_DIR$/src/com/company/ClientGUI.form" />
         <option value="$PROJECT_DIR$/src/com/company/ClientGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Client.java" />
       </list>
     </option>
   </component>
@@ -120,10 +115,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="613" />
-    <option name="y" value="17" />
-    <option name="width" value="1581" />
-    <option name="height" value="1047" />
+    <option name="x" value="-1288" />
+    <option name="y" value="43" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -487,8 +482,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="613" y="17" width="1581" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1288" y="43" width="1296" height="1000" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -497,12 +492,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.347191" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16677317" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20390625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -740,7 +735,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/ClientGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="-51">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -752,8 +747,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

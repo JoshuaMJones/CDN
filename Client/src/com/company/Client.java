@@ -70,7 +70,7 @@ public class Client {
             OutputStreamWriter outSW = new OutputStreamWriter(outS);
             BufferedWriter bufW = new BufferedWriter(outSW);
 
-            bufW.write(fileName + "\n");
+            bufW.write(fileName + "\n" + fileSize + "\n");
             bufW.flush();
             System.out.println("sent message to server to get the file: " + fileName);
 
