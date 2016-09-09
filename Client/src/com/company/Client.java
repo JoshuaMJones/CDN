@@ -10,13 +10,16 @@ import java.util.ArrayList;
 public class Client {
     private int portNum;
     private Socket clientSocket;
-    private String fileDir = "/Files/";
+    public String fileDir = "/Files/";
+    ArrayList<String> fileNames;
     public Client(int port){
+        String basePath = new File("").getAbsolutePath();
+        fileDir = basePath + fileDir;
         portNum = port;
     }
 
     public ArrayList<String> getFileNames(){
-        ArrayList<String> fileNames = new ArrayList<String>();
+        fileNames = new ArrayList<String>();
         try{
             clientSocket = new Socket("127.0.0.1", portNum);
 
@@ -76,8 +79,8 @@ public class Client {
             byte[] fileByteArray = new byte[fileSize];
             InputStream inS = clientSocket.getInputStream();
 
-            String basePath = new File("").getAbsolutePath();
-            String fileLocation = basePath + fileDir + fileName;
+
+            String fileLocation = fileDir + fileName;
             FileOutputStream fileOS = new FileOutputStream(fileLocation);
             BufferedOutputStream bufOS = new BufferedOutputStream((fileOS));
 
@@ -101,6 +104,14 @@ public class Client {
         }catch(Exception e){
             System.out.println("Problem occured while transferring file: " + fileName);
             e.printStackTrace();
+        }finally {
+            try{
+                clientSocket.close();
+            }
+            catch(Exception e)
+            {
+                System.out.println("failed to close the socket");
+            }
         }
     }
 }
