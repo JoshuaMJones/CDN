@@ -68,6 +68,7 @@ public class Server {
                     outS = clientSocket.getOutputStream();
                     outS.write(fileByteArray, 0, fileByteArray.length);
                     outS.flush();
+                    System.out.println("Sent the file: " + request);
                 }
             }
         }catch (Exception e){

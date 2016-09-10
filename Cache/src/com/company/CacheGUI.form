@@ -21,7 +21,7 @@
           </component>
         </children>
       </scrollpane>
-      <scrollpane id="3ddff" binding="CacheLogPane">
+      <scrollpane id="3ddff" binding="cacheLogPane">
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -34,7 +34,7 @@
           </component>
         </children>
       </scrollpane>
-      <component id="b39f9" class="javax.swing.JLabel">
+      <component id="b39f9" class="javax.swing.JLabel" binding="cacheFileLabel">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -42,7 +42,7 @@
           <text value="Files in Cache:"/>
         </properties>
       </component>
-      <component id="5b114" class="javax.swing.JLabel">
+      <component id="5b114" class="javax.swing.JLabel" binding="logLabel">
         <constraints>
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -73,6 +73,14 @@
         </constraints>
         <properties>
           <text value="Refresh the cache log"/>
+        </properties>
+      </component>
+      <component id="4d1df" class="javax.swing.JButton" binding="fileRefreshButton">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Refresh Cache File List"/>
         </properties>
       </component>
     </children>

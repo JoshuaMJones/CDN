@@ -54,7 +54,7 @@ public class ClientGUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (fileList.isSelectionEmpty()) {
-                    JOptionPane.showMessageDialog(null, "No file is selected, please select a file to");
+                    JOptionPane.showMessageDialog(null, "No file is selected, please select a file to download");
                     return;
                 }
 

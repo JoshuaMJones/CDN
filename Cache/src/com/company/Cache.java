@@ -5,15 +5,16 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.function.BooleanSupplier;
 
 /**
  * Created by ArO on 9/09/2016.
  */
 public class Cache {
     private int clientPort, serverPort;
-    private String fileLocation = "/Files/";
     private Socket serverSocket;
     private ServerSocket cacheSocket;
     private Socket clientSocket;
@@ -22,15 +23,25 @@ public class Cache {
     ArrayList<String> cacheLogs;
     ArrayList<String> serverFileNames;
     DateFormat dateFormat;
-    Calendar cal;
+    Boolean change;
+    File directory;
+    File[] filesInDir;
 
     public Cache(int inPort, int outPort){
         String basePath = new File("").getAbsolutePath();
         fileDir = basePath + fileDir;
         clientPort = inPort;
         serverPort = outPort;
+        cacheLogs = new ArrayList<String>();
+        fileNames = new ArrayList<String>();
+        serverFileNames = new ArrayList<String>();
         dateFormat = new SimpleDateFormat("HH:mm:ss yyyy/MM/dd");
-        cal = Calendar.getInstance();
+        change = false;
+        directory = new File(fileDir);
+        filesInDir = directory.listFiles();
+        for(File curFile : filesInDir){
+            fileNames.add(curFile.getName());
+        }
         try{
             cacheSocket = new ServerSocket(clientPort);
         }catch(Exception e){
@@ -45,15 +56,14 @@ public class Cache {
             while (true) {
                 System.out.println("Waiting for the client");
                 clientSocket = cacheSocket.accept();
-                String currentTime = dateFormat.format(cal.getTime());
+                String currentTime = dateFormat.format(Calendar.getInstance().getTime());
+                //String currentTime = dateFormat.format(LocalDateTime.now().toLocalDate().toString());
                 System.out.println("received client request");
                 InputStream inS = clientSocket.getInputStream();
                 InputStreamReader inSR = new InputStreamReader(inS);
                 BufferedReader br = new BufferedReader(inSR);
                 String request = br.readLine();
                 System.out.println("Received the request, string is: " + request);
-                String basePath = new File("").getAbsolutePath();
-                fileLocation = basePath + fileLocation;
                 if(request.equals("getallfiles")){
                     //forward the request to the server.
                     serverSocket = new Socket("127.0.0.1", serverPort);
@@ -108,15 +118,18 @@ public class Cache {
                     serverSocket.close();
                 }else{
                     //it will be requesting a particular file
-                    File thisFile = new File(fileLocation + request);
+                    String thisFileLocation = fileDir + request;
+                    System.out.println("the file should be at: " + thisFileLocation);
+                    File thisFile = new File(thisFileLocation);
                     String userRequest = "user request: file:" + request + " at: " + currentTime;
                     String response = "response: ";
                     int fileSize = Integer.parseInt(br.readLine());
-                    byte[] fileByteArray;
+                    byte[] fileByteArray = new byte[fileSize];
+                    System.out.println("We have a byte[] of size: " + fileSize);
                     if(thisFile.exists()){
                         //then we return this file
+                        System.out.println("We already have the file");
                         response += "cached file " + request;
-                        fileByteArray = new byte[(int)thisFile.length()];
                         FileInputStream fileIS = new FileInputStream(thisFile);
                         BufferedInputStream bufIS = new BufferedInputStream(fileIS);
                         bufIS.read(fileByteArray,0,fileByteArray.length);
@@ -124,9 +137,9 @@ public class Cache {
                         //send a request to the server to get the file
                         //Also create the file here(cache it)
                         response += "file " + request + "downloaded from the server";
-                        fileByteArray = new byte[fileSize];
+                        System.out.println("Downloading the file");
                         serverSocket = new Socket("127.0.0.1", serverPort);
-                        OutputStream outS = clientSocket.getOutputStream();
+                        OutputStream outS = serverSocket.getOutputStream();
                         OutputStreamWriter outSW = new OutputStreamWriter(outS);
                         BufferedWriter bufW = new BufferedWriter(outSW);
                         bufW.write(request + "\n");
@@ -134,14 +147,21 @@ public class Cache {
                         System.out.println("sent message to server to get the file: " + request);
                         InputStream serverIn = serverSocket.getInputStream();
 
-                        FileOutputStream fileOS = new FileOutputStream(thisFile);
+                        FileOutputStream fileOS = new FileOutputStream(thisFileLocation);
                         BufferedOutputStream bufOS = new BufferedOutputStream((fileOS));
+                        System.out.println("Contents of the byteArray");
 
-                        int bytesRead = serverIn.read(fileByteArray,0,fileByteArray.length);
+                        serverIn.read(fileByteArray,0,fileByteArray.length);
+
+                        for(int i = 0; i < fileByteArray.length; i++){
+                            System.out.println(fileByteArray[i]);
+                        }
 
                         bufOS.write(fileByteArray);
                         bufOS.flush();
                         bufOS.close();
+
+                        fileNames.add(request);
                     }
                     cacheLogs.add(userRequest);
                     cacheLogs.add(response);
@@ -154,7 +174,9 @@ public class Cache {
                     outS.close();
 
                 }
+                change = true;
                 clientSocket.close();
+
             }
         }catch(Exception e){
             System.out.println("Something went wrong while listening for client");
