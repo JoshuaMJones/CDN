@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Client {
     private int portNum;
     private Socket clientSocket;
-    public String fileDir = "/Files/";
+    public String fileDir = "/ClientFiles/";
     ArrayList<String> fileNames;
     public Client(int port){
         String basePath = new File("").getAbsolutePath();

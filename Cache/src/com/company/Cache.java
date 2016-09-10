@@ -18,7 +18,7 @@ public class Cache {
     private Socket serverSocket;
     private ServerSocket cacheSocket;
     private Socket clientSocket;
-    public String fileDir = "/Files/";
+    public String fileDir = "/CacheFiles/";
     ArrayList<String> fileNames;
     ArrayList<String> cacheLogs;
     ArrayList<String> serverFileNames;

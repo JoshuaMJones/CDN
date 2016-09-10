@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="185c334f-d9db-476f-a481-bab3fdc73ed5" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Files/txt1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Files/txt2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Files/txt3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Server/Files/txt1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Server/Files/txt2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Server/Files/txt3.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/Cache.class" afterPath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/Cache.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/CacheGUI$1.class" afterPath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/CacheGUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/CacheGUI$2.class" afterPath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/CacheGUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/CacheGUI.class" afterPath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/CacheGUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/Main.class" afterPath="$PROJECT_DIR$/../Cache/out/production/Cache/com/company/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Client/com/company/Client.class" afterPath="$PROJECT_DIR$/out/production/Client/com/company/Client.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Client/com/company/ClientGUI$2.class" afterPath="$PROJECT_DIR$/out/production/Client/com/company/ClientGUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/out/production/Server/com/company/Main.class" afterPath="$PROJECT_DIR$/../Server/out/production/Server/com/company/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/out/production/Server/com/company/Server.class" afterPath="$PROJECT_DIR$/../Server/out/production/Server/com/company/Server.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Cache/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/src/com/company/Cache.java" afterPath="$PROJECT_DIR$/../Cache/src/com/company/Cache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/src/com/company/CacheGUI.form" afterPath="$PROJECT_DIR$/../Cache/src/com/company/CacheGUI.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/src/com/company/CacheGUI.java" afterPath="$PROJECT_DIR$/../Cache/src/com/company/CacheGUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Cache/src/com/company/Main.java" afterPath="$PROJECT_DIR$/../Cache/src/com/company/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/ClientGUI.java" afterPath="$PROJECT_DIR$/src/com/company/ClientGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Client.java" afterPath="$PROJECT_DIR$/src/com/company/Client.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Server/src/com/company/Server.java" afterPath="$PROJECT_DIR$/../Server/src/com/company/Server.java" />
     </list>
@@ -53,8 +48,8 @@
       <file leaf-file-name="ClientGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/ClientGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+            <state relative-caret-position="391">
+              <caret line="83" column="50" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,8 +70,8 @@
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="79" column="27" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="27" />
+            <state relative-caret-position="-612">
+              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,8 +102,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/ClientGUI.form" />
-        <option value="$PROJECT_DIR$/src/com/company/Client.java" />
         <option value="$PROJECT_DIR$/src/com/company/ClientGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Client.java" />
       </list>
     </option>
   </component>
@@ -770,8 +765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="79" column="27" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="27" />
+        <state relative-caret-position="-612">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -780,8 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/ClientGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+        <state relative-caret-position="391">
+          <caret line="83" column="50" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

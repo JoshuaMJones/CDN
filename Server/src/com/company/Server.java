@@ -9,7 +9,7 @@ import java.net.Socket;
  * Created by Josh on 7/09/2016.
  */
 public class Server {
-    public final static String fileLocation = "/Files/";
+    public final static String fileLocation = "/ServerFiles/";
     ServerSocket fileServer;
     OutputStream outS;
     Socket clientSocket;
