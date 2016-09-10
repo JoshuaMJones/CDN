@@ -38,6 +38,13 @@ public class Cache {
         dateFormat = new SimpleDateFormat("HH:mm:ss yyyy/MM/dd");
         change = false;
         directory = new File(fileDir);
+        if(!directory.isDirectory()){
+            try{
+                directory.mkdir();
+            }catch(Exception e){
+                System.out.println("Failed to create directory");
+            }
+        }
         filesInDir = directory.listFiles();
         for(File curFile : filesInDir){
             fileNames.add(curFile.getName());

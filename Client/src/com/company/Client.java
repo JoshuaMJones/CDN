@@ -12,9 +12,18 @@ public class Client {
     private Socket clientSocket;
     public String fileDir = "/ClientFiles/";
     ArrayList<String> fileNames;
+    File directory;
     public Client(int port){
         String basePath = new File("").getAbsolutePath();
         fileDir = basePath + fileDir;
+        directory = new File(fileDir);
+        if(!directory.isDirectory()){
+            try{
+                directory.mkdir();
+            }catch(Exception e){
+                System.out.println("Failed to create basePath");
+            }
+        }
         portNum = port;
     }
 

@@ -13,8 +13,20 @@ public class Server {
     ServerSocket fileServer;
     OutputStream outS;
     Socket clientSocket;
+    String basePath;
     public Server(int portNum){
         fileServer = null;
+        basePath = new File("").getAbsolutePath();
+        basePath += fileLocation;
+        File directory = new File(basePath);
+        if(!directory.isDirectory()){
+            try{
+                directory.mkdir();
+            }catch(Exception e){
+                System.out.println("Failed to create basePath");
+            }
+        }
+
         try{
             fileServer = new ServerSocket(portNum);
         }catch (Exception e){
@@ -37,12 +49,10 @@ public class Server {
                 BufferedReader br = new BufferedReader(inSR);
                 String request = br.readLine();
                 System.out.println("Received the request, string is: " + request);
-                String basePath = new File("").getAbsolutePath();
-                basePath += fileLocation;
                 if(request.equals("getallfiles")){
                     //return what files we have.
                     System.out.println("We are going to send a list of files");
-                    File directory = new File(basePath);
+                    File directory = new File(this.basePath);
                     File[] filesInDir = directory.listFiles();
                     System.out.println(filesInDir[0].toString());
                     String files = "";
